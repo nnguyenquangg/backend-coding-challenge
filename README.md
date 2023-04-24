@@ -44,8 +44,10 @@ You can change environment values to any if you want or it will get default valu
 
 ## Installation
 
+- [NodeJS environment](https://nodejs.org/en)_
+- Install Node environment first  (Suggest NodeJS version 18.x.x)
+
 ```bash
-$ nvm use 18.15.0
 $ npm install
 ```
 
