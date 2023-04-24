@@ -115,5 +115,20 @@ curl --location 'http://localhost:3000/employees?name=Sophie' \
 --header 'Authorization: Bearer  ${ACCESS_TOKEN}'
 ```
 
+`Import  the  Employee -> Supervisor relationship data`
+```bash
+curl --location 'http://localhost:3001/employees' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer ${ACCESS_TOKEN}' \
+--data '{
+    "data": {
+        "Pete": "Nick",
+        "Barbara": "Nick",
+        "Nick": "Sophie",
+        "Sophie": "Jonas"
+    }
+}'
+```
+
 ## License
 Develop by [Quang](https://github.com/nnguyenquangg).
